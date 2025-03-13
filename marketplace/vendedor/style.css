@@ -1,0 +1,362 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+body > .container{
+    max-width: 100vw;
+    background-color: #fff;
+}
+/* HEADER */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 11%;
+    gap: 30px;
+
+    background-color: #D2B48C;
+    z-index: 1001;
+}
+
+header > span{
+    cursor: pointer;
+}
+
+#cepBtn{
+    border: none;
+    text-align: left;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#cepBtn > strong{
+    font-size: medium;
+}
+
+#cepBtn > strong > i{
+    font-size: 20px;
+}
+
+#searchBox{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#searchBox > #searchInput{
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.bi-search{
+    cursor: pointer;
+}
+
+#clearSearch{
+    display: none;
+    cursor: pointer;
+}
+
+#userBox{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logado{
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 1px;
+    transition: .2s;
+    cursor: pointer;
+    border: 1px solid;
+    width: 45px;
+    height: 45px;
+}
+
+.logado > img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.logado:hover{
+    border-color: #6a6ae0;
+}
+
+#userLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #8d8c8c;
+    cursor: pointer;
+}
+
+#userLogin > .bi-person-circle{
+    font-size: 24px;
+}
+
+/* FIM HEADER */
+
+.container > #banner{
+    width: 100%;
+    height: 300px;
+}
+
+.container > #banner > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container > section{
+    width: 100%;
+    padding: 20px 11%;
+}
+
+.container > section > #userInfos{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.container > section > #userInfos > img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    margin-top: -100px;
+}
+
+.container > section > #userInfos > #text > p{
+    margin-top: 10px;
+}
+
+#btnEditar{
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .2s;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#btnEditar:hover{
+    color: #696969;
+}
+
+#btnEditar > span{
+    font-size: small;
+}
+
+/* APRESENTAÇÃO */
+
+body > section{
+    display: flex;
+    padding: 20px 10%;
+    gap: 20px;
+}
+
+#apresentacaoBox{
+    position: sticky;
+    top: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(89, 89, 89, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+    height: fit-content;
+    width: 32%;
+}
+
+#apresentacaoBox > #apresentacao > h3{
+    text-align: center;
+}
+
+#apresentacaoBox > #apresentacao > p{
+    font-size: 15px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+#apresentacaoBox > ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+#apresentacaoBox > ul > li{
+    padding: 15px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: default;
+}
+
+
+#apresentacaoBox > ul > #btnEditarAprensentacao{
+    border: 3px dashed black;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: center;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* #apresentacaoBox > ul > li > i{
+    font-size: 25px;
+}
+
+#apresentacaoBox > ul > #btnEditarAprensentacao:hover{
+    border-color: #696969;
+    color: #696969;
+} */
+
+section > #prdoutosBox{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(89, 89, 89, 0.5);
+    max-width: 68%;
+    width: 68%;
+}
+
+section > #prdoutosBox > h2{
+    margin-top: 15px;
+    margin-left: 18px;
+}
+
+section > #prdoutosBox > ul{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    list-style: none;
+    cursor: pointer;
+    gap: 20px;
+}
+
+section > #prdoutosBox > ul > #adicionarProduto{
+    border: 3px solid black;
+    border-style: dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:  50px;
+    cursor: pointer;
+    transition: .2s;
+    min-height: 100%;
+}
+
+section > #prdoutosBox > ul > #adicionarProduto > p{
+    margin-top: 10px;
+    font-size: medium;
+}
+
+section > #prdoutosBox > ul > #adicionarProduto:hover{
+    border-color: #696969;
+    color: #696969;
+}
+
+section > #prdoutosBox > ul > li{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    min-height: 200px;
+    /* height: fit-content; */
+    width: calc(33.33% - 15px);
+    border-radius: 5px;
+}
+
+section > #prdoutosBox > ul > li > img{
+    width: 100%;
+    height: 240px;
+    min-height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+section > #prdoutosBox > ul > li > .produtoInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section > #prdoutosBox > ul > li > .produtoInfos > .controlePreco{
+    display: flex;
+    flex-direction: column;
+}
+
+section > #prdoutosBox > ul > li > .produtoInfos > .controlePreco > strong{
+    font-size: x-large;
+}
+
+section > #prdoutosBox > ul > li > .produtoInfos > .controlePreco > span{
+    font-size: 17px;
+    text-decoration: line-through;
+    color: #696969;
+}
+
+section > #prdoutosBox > ul > li > .produtoInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    height: 50%;
+}
+
+section > #prdoutosBox > ul > li > .produtoInfos > .categoria > span{
+    color: #696969;
+}
+
+.editarProduto{
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 100;
+    position: relative;
+}
+
+.editarProduto:hover{
+    background-color: #3636ff;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+}

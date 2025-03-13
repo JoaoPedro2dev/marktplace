@@ -1,0 +1,271 @@
+#telaVenda{
+    max-width: 100vw;
+    background-color: #f2f2f2;
+    padding: 20px 11%;
+}
+
+#telaVenda > #container{
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+#produtoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.produto-galeria, #produtoInfosBox, #compraBox{
+    width: 33.33%;
+}
+
+.produto-galeria {
+    width: 400px;
+    text-align: center;
+}
+.imagem-destaque {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.miniaturas {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-top: 10px;
+}
+.miniaturas img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.miniaturas img:hover {
+    border: 1px solid #333;
+}
+
+.miniaturas img.selectedImg {
+    border: 1px solid #333;
+}
+
+#produtoInfosBox{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#produtoInfosBox > #lojaBox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+#produtoInfosBox > #lojaBox > img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+#produtoInfosBox > #produtoInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#produtoInfosBox > #produtoInfos > strong{
+    font-size: larger   ;
+}
+
+#produtoInfosBox > #produtoInfos > #valorBox > p:last-child{
+    font-size: xx-large;
+}
+
+#produtoInfosBox > #produtoInfos > #valorBox > #PreçoAnterior{
+    font-size: medium;
+    color: #686868;
+    text-decoration: line-through;
+}
+
+#produtoInfosBox > #produtoInfos > #colorBox > p, #tamanhosBox > p{
+    margin-bottom: 5px;
+}
+
+#produtoInfosBox > #produtoInfos > #colorBox > select , #tamanhosBox > select{
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#produtoInfosBox > #produtoInfos > #descricao{
+    margin-top: 10px;
+}
+
+#produtoInfosBox > #produtoInfos > #guiaTamanho{
+    color: blue;
+    cursor: pointer;
+}
+
+#compraBox{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#compraBox > #contVendas{
+    font-size: small;
+    color:#686868;
+}
+
+.green{
+    color:#00A650;
+    font-weight: bold;
+}
+
+#quantidade > p{
+    margin-bottom: 5px;
+}
+
+#buttonsBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+#btnCart{
+    background-color: #5353ff;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition:  ease-in-out .2s;
+}
+
+#buttonsBox > button:first-child{
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+#garantiaBox{
+    margin-top: 10px;
+}
+
+#garantiaBox > p:first-child{
+    color: blue;
+    margin-bottom: 5px;
+}
+
+.bi-shield-check{
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+#comentariosContainer{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 100px;
+    max-height: 280px;
+    overflow-y: hidden;
+}
+
+#comentariosContainer > h3{
+    text-align: center;
+}
+
+#mostarComentariosBtn{
+    width: 100%;
+    cursor: pointer;
+    color: blue;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#comentariosContainer > .comentarioBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#comentariosContainer > .comentarioBox > .usuarioInfos{
+    display: flex;
+    gap: 5px;
+}
+
+#comentariosContainer > .comentarioBox > .usuarioInfos > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+
+#comentariosContainer > .comentarioBox > .usuarioInfos > p{
+    display: flex;
+    flex-direction: column;
+}
+
+#comentariosContainer > .comentarioBox > .usuarioInfos > p > span{
+    font-size: small;
+}
+
+.userText{
+    margin: 10px;
+}
+
+#comentariosContainer > .comentarioBox > .likeBox {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#comentariosContainer > .comentarioBox > .likeBox > button{
+    border: none;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.editarProduto{
+    border: none;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 100;
+    position: relative;
+}
+
+.editarProduto:hover{
+    background-color: #3636ff;
+}

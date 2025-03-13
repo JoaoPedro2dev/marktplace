@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../login/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Cadastro loja</title>
+</head>
+<body>
+    <form id="formulario">
+        <h2>Crie sua conta comercial</h2>
+
+        <input type="hidden" name="typeAccount" value="vendedor">
+
+        <p>
+            <label for="user" class="label">Nome da loja</label>
+            <input type="text" id="user" name="user" class="input">
+        </p>
+
+        <p>
+            <label for="email" class="label">E-mail</label>
+            <input type="email" name="email" id="email" class="input">
+        </p>
+
+        <p>
+            <label for="tel">Telefone (Opicional)</label>
+            <input type="tel" name="tel" id="tel" maxlength="14">
+        </p>
+
+        <p id="cpfBox">
+            <label for="cpf" class="label">CPF ou CNPJ</label>
+            <input type="text" name="cpf" id="cpf" class="input" maxlength="15">
+            <a href="./cpf.html">Porque pedimos seu CPF ou CNPJ?</a>
+        </p>
+
+        <p>
+            <label for="pass" class="label">Senha</label>
+            <input type="password" name="pass" id="pass" class="input">
+        </p>
+
+        <p id="passContent">
+            <span>Contem de 6 a 10 caracteres</span>
+            <span>Contem letra maiúscula</span>
+            <span>contem número</span>
+            <span>conter caracter especia, ex @,!,#</span>
+        </p>
+
+        <span id="error"></span>
+
+        <input type="submit" value="Criar conta comercial">
+        <a href="../login/index.html">voltar</a>
+    </form>
+
+    <div id="userCadastrado">
+        <h3>Cadastro Concluido com sucesso 🥳</h3>
+    </div>
+</body>
+</html>

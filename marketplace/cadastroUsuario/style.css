@@ -1,0 +1,39 @@
+form > h2{
+    text-align: center;
+}
+
+form > #emailBox{
+    display: none;
+}
+
+form > #cpfBox > a{
+    font-size: small;
+    display: none;
+}
+
+#passContent{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#passContent > span{
+    color: red;
+    font-size: small;
+}
+
+#userCadastrado{
+    position: absolute;
+    top: 0px;
+    align-self: center;
+    padding: 40px;
+    background-color: #5bd35b;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px;
+    transform: translateY(-100%);
+    transition: transform .2s ease-in-out;
+}
+
+#userCadastrado.show{
+    transform: translateY(0%);
+}
